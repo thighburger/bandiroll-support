@@ -16,7 +16,7 @@
 <h2>교실 사진을 보관하는 곳</h2>
 <p>반디롤은 교사가 수업 중 촬영한 사진을 정리하는 iPhone 앱입니다. 앱에서 촬영한 사진과 사용자가 직접 선택해 가져온 사진의 사본, 미리보기, 촬영 또는 추가 시각, 아이 이름과 사진 분류 기록을 이 기기의 앱 전용 저장 공간에 보관합니다. 가입은 필요하지 않습니다. 앱 사진함은 기기 백업에서 제외됩니다.</p>
 <h2>얼굴을 이용한 분류</h2>
-<p>교사가 얼굴 분류를 켜면 앱이 Apple Vision을 사용해 기기 안에서 얼굴의 위치와 얼굴 영역의 시각적 특징을 계산합니다. 교사가 지정한 이름을 바탕으로 새 사진에 등장한 아이의 앨범을 찾아주는 데 이 정보를 사용합니다. 이 기능의 기본 설정은 꺼짐입니다. 분류를 끄면 저장한 얼굴 위치와 특징이 삭제되며, 이미 연결한 이름은 사진에 붙인 태그로 유지됩니다. 기기가 얼굴을 놓치거나 다른 아이로 분류할 수 있으므로 교사가 결과를 확인하고 바꿀 수 있습니다. 교사는 촬영과 얼굴 분류 전에 기관 방침과 해당 지역에서 요구하는 보호자 동의 범위를 확인해야 합니다.</p>
+<p>교사가 얼굴 분류를 켜면 앱은 Apple Vision으로 사진 속 얼굴 위치를 찾고, 앱에 포함된 SFace 모델을 Core ML로 실행해 얼굴끼리 비교할 수 있는 수치 정보를 계산합니다. 두 단계 모두 이 기기 안에서 진행됩니다. 교사가 지정한 이름을 바탕으로 새 사진에 등장한 아이의 앨범을 찾아주는 데 이 정보를 사용합니다. 이 기능의 기본 설정은 꺼짐입니다. 분류를 끄면 저장한 얼굴 위치와 특징이 삭제되며, 이미 연결한 이름은 사진에 붙인 태그로 유지됩니다. 기기가 얼굴을 놓치거나 다른 아이로 분류할 수 있으므로 교사가 결과를 확인하고 바꿀 수 있습니다. 교사는 촬영과 얼굴 분류 전에 기관 방침과 해당 지역에서 요구하는 보호자 동의 범위를 확인해야 합니다.</p>
 <h2>외부 전송과 공유</h2>
 <p>앱은 사진, 아이 이름, 얼굴 특징 또는 이용 기록을 개발자나 제3자의 서버로 전송하지 않습니다. 광고, 추적 도구, 외부 분석 SDK를 사용하지 않습니다. 사용자가 공유 메뉴에서 사진을 내보내면 선택한 대상에 사본이 전달됩니다. 이후 사본은 해당 앱이나 수신자가 관리합니다.</p>
 <h2>보관 기간과 삭제</h2>
@@ -31,7 +31,7 @@
 <h2>Where classroom photos are kept</h2>
 <p>Bandiroll is an iPhone app for teachers. Its private storage on your device holds pictures taken in the app, copies of pictures you select in the system picker, previews, capture or import times, children’s names and album assignments. No account is required. The app library is excluded from device backups.</p>
 <h2>Face-based sorting</h2>
-<p>If a teacher enables face-based sorting, Bandiroll uses Apple Vision on the device to find faces and calculate visual features from the face regions. It uses names assigned by the teacher to match new pictures to children’s albums. This feature is off by default. Turning it off deletes stored face locations and features. Existing album assignments remain as name tags on the pictures. Teachers can review and correct matches, including missed faces. Before taking photos or enabling face sorting, teachers should check their institution’s policy and the scope of guardian permission required in their location.</p>
+<p>If a teacher enables face-based sorting, Bandiroll uses Apple Vision to locate faces in a photo and runs a bundled SFace model with Core ML to calculate numerical features for comparing faces. Both steps run on the device. It uses names assigned by the teacher to match new pictures to children’s albums. This feature is off by default. Turning it off deletes stored face locations and features. Existing album assignments remain as name tags on the pictures. Teachers can review and correct matches, including missed faces. Before taking photos or enabling face sorting, teachers should check their institution’s policy and the scope of guardian permission required in their location.</p>
 <h2>Transfers and sharing</h2>
 <p>The app does not send photos, names, face features or usage records to the developer or third-party servers. It uses no advertising, tracking or external analytics SDKs. If you export a picture through the share sheet, the destination you select receives a copy. That app or recipient controls the copy thereafter.</p>
 <h2>Retention and deletion</h2>
